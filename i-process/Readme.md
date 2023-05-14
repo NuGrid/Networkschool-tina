@@ -7,10 +7,14 @@ plots in those notebooks require reaction flux output which is by default turned
 runs. Turn it on by setting `iplot_flux_option = 1` in the input file
 `ppn_frame.input`. 
 
-The `master-result` folder does contain the default reference output including flux data. It is available as a compressed archive `tina-iprocess-master-result.tgz` in `/data/nugrid-data/projects/tina` which is also accessible via the Globus endpoint `astrohub#nugrid:/data/projects/tina`. To extract this zipped tar archive you need to use the terminal, navigate into the correct run directory and issue the command
-```Shell
-tar -xzvf /data/nugrid_data/projects/tina/tina-iprocess-master-result.tgz 
-```
+The `master-result` folder does contain the default reference output
+including flux data. It is available read-only in `/data` and linked by the setup notebook `Make-new-user-directory.ipynb`. If not, it is available as a compressed archive
+`tina-iprocess-master-result.tgz` in `/data/nugrid-data/projects/tina`
+which is also accessible via the Globus endpoint
+`astrohub#nugrid:/data/projects/tina`. To extract this zipped tar
+archive you need to use the terminal, navigate into the correct run
+directory and issue the command ```Shell tar -xzvf
+/data/nugrid_data/projects/tina/tina-iprocess-master-result.tgz ```
 
 
 
@@ -23,6 +27,9 @@ Case | Reference
 `Sakurai` | [Denissenkov P., Perdikakis G., Herwig F., Schatz H., Ritter C., Pignatari M., Jones S., Nikas S., Spyrou A. 2018. The impact of (n, γ) reaction rate uncertainties of unstable isotopes near N = 50 on the i-process nucleosynthesis in He-shell flash white dwarfs. Journal of Physics G Nuclear Physics. 45:055203.](https://ui.adsabs.harvard.edu/abs/2018JPhG...45e5203D/abstract)
 `weak` | [McKay J. E., Denissenkov P. A., Herwig F., Perdikakis G., Schatz H. 2020. The impact of (n,γ) reaction rate uncertainties on the predicted abundances of I-process elements with 32 ≤ Z ≤ 48 in the metal-poor star HD94028. Monthly Notices of the Royal Astronomical Society. 491:5179.](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5179M/abstract)
 
-**For advanced users:** The code can run in two modes. If `ININET  = 0` in the input file `ppn_physics.input` then a new network will be created with default choices for all reaction rates. This new generated network is written to the `networksetup.txt` file. The procedure described in the `Rate-Changer` notebook will apply changes of reaction rates in the `networksetup.txt` file. When run in mode `ININET  = 3` the code will read in the network from the current `networksetup.txt` file and not attempt to create a default. 
+**For advanced users:**
+* The code can run in two modes. If `ININET  = 0` in the input file `ppn_physics.input` then a new network will be created with default choices for all reaction rates. This new generated network is written to the `networksetup.txt` file. The procedure described in the `Rate-Changer` notebook will apply changes of reaction rates in the `networksetup.txt` file. When run in mode `ININET  = 3` the code will read in the network from the current `networksetup.txt` file and not attempt to create a default.
+* Additional analysis notebooks are available in the directory `i-process-analysis`
  
  This directory lives on Github: https://github.com/NuGrid/Networkschool-tina/tree/main/i-process
+
