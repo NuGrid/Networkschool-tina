@@ -5,8 +5,8 @@ import numpy as np
 import pickle
 
 global jb_dict,jb_elems
-data_dir = '/data/nugrid/data/iprocess-impact-MC/one-zone-run_default/'
-pickle_in = open(data_dir+'../data_utils/Jinabasedict.pickle',"rb")
+data_dir = '/data/nugrid_data/projects/tina/iprocess-impact-MC/'
+pickle_in = open(data_dir+'data_utils/Jinabasedict.pickle',"rb")
 jb_dict,jb_elems = pickle.load(pickle_in)
 
 
