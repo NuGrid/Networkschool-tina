@@ -1,6 +1,6 @@
 &ppn_physics
 
-        ININET  = 3
+        ININET  = 0
         I_NSE   = 0
 
         NVCP    = 59

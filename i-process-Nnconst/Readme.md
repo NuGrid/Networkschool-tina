@@ -5,7 +5,7 @@ described in the notebook `Constant-neutron-density-method.ipynb`.
 
 Start with the `Model-runner` notebook to run and save a simulation. Then use the `Result-Explorer` to plot a chart of isotopes. The `Rate-changer` notebook allows you to change reaction rates using multiplication factors for a new run.
 
-Find more analysis notebooks in the folder `Notebooks`. Some of the
+Find more analysis notebooks in the folder `i-process/Notebooks`. Some of the
 plots in those notebooks require reaction flux output which is by default turned off for new
 runs. Turn it on by setting `iplot_flux_option = 1` in the input file
 `ppn_frame.input`. 
